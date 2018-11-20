@@ -68,8 +68,8 @@ public class DFS {
         Random random = new Random();
 
         for (int i = 0; i < numOfEdges;) {
-            int start = random.nextInt(numOfNodes);
-            int end = random.nextInt(numOfNodes);
+            int start = random.nextInt(numOfNodes); //
+            int end = random.nextInt(numOfNodes); //
 
             if (start == end || g.containsEdge(start, end)) {
                 continue;
