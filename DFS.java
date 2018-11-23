@@ -75,7 +75,7 @@ public class DFS {
                 continue;
             }
 
-            // the graph not contains this edge(start -> end)
+            // the graph does not contain this edge(start -> end)
             g.addEdge(start, end);
 
             i++;
@@ -100,7 +100,7 @@ public class DFS {
             dfs(graph);  // use dfs algorithm to visit the graph
 
             long end = System.nanoTime();
-            double time = (end - begin) / 1E3;  // the unit is microsecond
+            double time = (end - begin) / 1E3;  // unit is microsecond
 
             System.out.printf("Running time: %.3f us\n", time);
         }
